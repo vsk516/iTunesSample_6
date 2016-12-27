@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/search_layout_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Search By"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#4d0695d7"
+            >
+        <Spinner
+            android:id="@+id/entity_spinner_list"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/entities_array"
+            android:layout_toRightOf="@+id/music_search_text"
+            />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#4d0695d7"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:id="@+id/music_search_text"
+                android:layout_marginRight="5dp"
+                />
+        </android.support.v7.widget.CardView>
+        <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_search_button"
+            android:layout_gravity="right"
+            android:background="#4d0695d7"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="21dp" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

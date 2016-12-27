@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/music_search_text"
+        android:layout_marginRight="5dp"
+         />
+
+    <Spinner
+        android:id="@+id/entity_spinner_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/entities_array"
+        android:layout_toRightOf="@+id/music_search_text"
+        />
+
+    <Button
+        android:text="Search songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_search_button"
+        android:gravity="center"
+        android:layout_below="@+id/music_search_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/url_text"
+        android:text="url comes here"
+        android:layout_below="@+id/music_search_button"/>
+</RelativeLayout>

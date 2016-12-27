@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">iTunesSample</string>
+
+    <string-array name="entities_array">
+
+        <item>Movie</item>
+        <item>Album</item>
+        <item>All Artist</item>
+        <item>Music video</item>
+        <item>Mix</item>
+        <item>Audio book</item>
+        <item>Tv Season</item>
+
+
+    </string-array>
+</resources>
